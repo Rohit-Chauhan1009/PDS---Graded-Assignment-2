@@ -42,3 +42,21 @@ Data Citation:
 Project Objective:
 
 Based on the given users and items data of an e-commerce company, segment the similar user and items into suitable clusters. Analyze the clusters and provide your insights to help the organization promote their business.
+
+
+This code covers all the steps mentioned in the project description. Here's a brief explanation of each step:
+
+1-2. We import necessary libraries and load the data, then examine its basic properties.
+3-4. We check for and remove duplicates, then drop unnecessary columns.
+5-7. We clean the 'weight' and 'height' columns, and group similar categories in 'rented for'.
+8-9. We handle missing values and examine the statistical summary of the data.
+
+10. We treat outliers in the 'age' column using the IQR method.
+11. We visualize the distribution of 'rented for' categories.
+
+12-13. We encode categorical variables and standardize the data.
+
+14. We apply PCA to reduce dimensionality while retaining 95% of the variance.
+15. We perform K-means clustering, including finding the optimal K using the elbow method.
+16. We perform Agglomerative clustering on a sample of the data, including creating a dendrogram.
+17. We conduct a basic cluster analysis by visualizing the distribution of features across clusters.
